@@ -378,6 +378,11 @@ Resources:
             - !Ref 'AWS::Region'
             - |+
 
+            - |
+              # craete file from UserData
+            - 'echo test from UserData > created-by-user-data.txt '
+            - |+
+
     CreationPolicy:
       ResourceSignal:
         Timeout: PT5M
