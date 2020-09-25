@@ -108,17 +108,10 @@ Resources:
               httpd: []
               php: []
               php-mysql: []
-              cowsay: []
           files:
-            /tmp/test-cfn-create.txt:
-              content: |
-                hello from cfn-hup!
-              mode: '000400'
-              owner: root
-              group: root
             /tmp/test-cfn-update.txt:
               content: |
-                hello from cfn-hup!
+                hello from cfn-hup! content has been updated!
               mode: '000400'
               owner: root
               group: root
