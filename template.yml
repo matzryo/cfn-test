@@ -108,7 +108,20 @@ Resources:
               httpd: []
               php: []
               php-mysql: []
+              cowsay: []
           files:
+            /tmp/test-cfn-create.txt:
+              content: |
+                hello from cfn-hup!
+              mode: '000400'
+              owner: root
+              group: root
+            /tmp/test-cfn-update.txt:
+              content: |
+                hello from cfn-hup!
+              mode: '000400'
+              owner: root
+              group: root
             /var/www/html/index.php:
               content: !Join 
                 - ''
