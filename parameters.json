@@ -1,0 +1,9 @@
+{
+    "KeyName": "cfn-test-key",
+    "DBName": "testdb",
+    "DBUser": "matzryo",
+    "DBPassword": "q40stBlSEjwi",
+    "DBRootPassword": "q40stBlSEjwi",
+    "InstanceType": "t2.micro",
+    "SSHLocation": "0.0.0.0/0"
+}

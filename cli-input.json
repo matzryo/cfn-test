@@ -1,0 +1,40 @@
+{
+    "StackName": "cfn-test-stack",
+    "Parameters": [
+        {
+            "ParameterKey": "KeyName",
+            "ParameterValue": "cfn-test-key"
+        },
+        {
+            "ParameterKey": "DBName",
+            "ParameterValue": "testdb"
+        },
+        {
+            "ParameterKey": "DBUser",
+            "ParameterValue": "matzryo"
+        },
+        {
+            "ParameterKey": "DBPassword",
+            "ParameterValue": "q40stBlSEjwi"
+        },
+        {
+            "ParameterKey": "DBRootPassword",
+            "ParameterValue": "q40stBlSEjwi"
+        },
+        {
+            "ParameterKey": "InstanceType",
+            "ParameterValue": "t2.micro"
+        },
+        {
+            "ParameterKey": "SSHLocation",
+            "ParameterValue": "0.0.0.0/0"
+        }
+    ],
+    "OnFailure": "DO_NOTHING",
+    "Tags": [
+        {
+            "Key": "Name",
+            "Value": "cfn-tag"
+        }
+    ]
+}
