@@ -270,6 +270,9 @@ Resources:
                   - !Ref 'AWS::Region'
                   - |+
 
+                  - interval=1
+                  - |+
+
               mode: '000400'
               owner: root
               group: root
