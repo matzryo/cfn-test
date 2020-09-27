@@ -109,12 +109,6 @@ Resources:
               php: []
               php-mysql: []
           files:
-            /tmp/test-cfn-update.txt:
-              content: |
-                hello from cfn-hup! content has been updated! updated again!
-              mode: '000400'
-              owner: root
-              group: root
             /var/www/html/index.php:
               content: !Join 
                 - ''
