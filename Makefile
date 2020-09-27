@@ -8,23 +8,23 @@ create-stack:
 
 .PHONY: wait-create-stack
 wait-create-stack:
-	aws cloudformation wait stack-create-complete --stack-name cfn-test-stack
+	aws cloudformation wait stack-create-complete --stack-name cfn-test
 
 .PHONY: get-url
 get-url:
-	aws cloudformation describe-stacks --stack-name cfn-test-stack --query "Stacks[0].Outputs[0]"
+	aws cloudformation describe-stacks --stack-name cfn-test --query "Stacks[0].Outputs[0]"
 
 .PHONY: deploy
 deploy:
-	aws cloudformation deploy --stack-name cfn-test-stack --template-file ./template.yml
+	aws cloudformation deploy --stack-name cfn-test --template-file ./template.yml
 
 .PHONY: delete
 delete:
-	aws cloudformation delete-stack --stack-name cfn-test-stack
+	aws cloudformation delete-stack --stack-name cfn-test
 
 .PHONY: ssh
 ssh:
 	ssh -i ~/.ssh/cfn-test-key.pem ec2-user@$(HOST)
 
 # インスタンス内で
-# /opt/aws/bin/cfn-init -v --stack cfn-test-stack --resource WebServerInstance --configsets InstallAndRun --region ap-northeast-1
+# /opt/aws/bin/cfn-init -v --stack cfn-test --resource WebServerInstance --configsets InstallAndRun --region ap-northeast-1

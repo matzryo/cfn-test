@@ -1,5 +1,5 @@
 {
-    "StackName": "cfn-test-stack",
+    "StackName": "cfn-test",
     "Parameters": [
         {
             "ParameterKey": "KeyName",
