@@ -108,6 +108,7 @@ Resources:
               httpd: []
               php: []
               php-mysql: []
+              cowsay: []
           files:
             /var/www/html/index.php:
               content: !Join 
@@ -125,7 +126,7 @@ Resources:
                   - |2
                       <body>
                   - |2
-                        <h1>Welcome to the AWS CloudFormation PHP Sample</h1>
+                        <h1>Welcome to the AWS CloudFormation PHP Sample Modified!!</h1>
                   - |2
                         <p/>
                   - |2
