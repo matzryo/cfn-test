@@ -1,3 +1,6 @@
+# about this repository
+
+https://blog.matzryo.com/entry/2020/09/26/cfn-helper-scripts
 
 # requirements
 
